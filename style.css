@@ -427,51 +427,48 @@ body.dark .about .row .content h3{
   line-height: 1.8;
 }
 
-.review .box{
-  border-radius: .5rem;
-  background: #333;
-  padding: 2rem;
-  position: relative;
-}
 
-.review .box .fa-quote-right{
-  position: absolute;
-  top: 2rem; right: 2rem;
-  color: var(--main-color);
-  font-size: 5rem;
+.review .box{
+  background-color: #333;
+  padding:20px;
+  border-radius: .5rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
 .review .box .user{
-  display: flex;
-  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 250px;
   gap: 1.5rem;
-  padding-bottom: 1rem;
 }
 
 .review .box .user img{
-  height: 7rem;
-  width: 7rem;
-  border-radius:50% ;
+  border-radius: 50%;
+  width: 100%;
   object-fit: cover;
 }
 
-.review .box .user h3{
+.review .box .user:hover img{
+  transform: scale(1.1);
+}
+
+.review .box .user-info h3{
   font-size: 2rem;
   color: #fff;
 }
 
-.review .box .user span{
+.review .box .user-info span{
   font-size: 1.5rem;
   color: #eee;
 }
-
-.review .box p{
+.review .box .user-info p{
+  font-size: 15px;
+  color:#eee;
   line-height: 2;
-  color: #eee;
-  font-weight: 500;
   padding: .5rem 0;
-  font-size: 1.6rem;
 }
+
+
 
 .contact form{
   max-width: 70rem;
@@ -627,6 +624,7 @@ body.dark .footer .box-container .box a{
   .contact form .inputbox input{
     width: 100%;
   }
+
 }
 
 .checkbox {
@@ -673,8 +671,160 @@ body.dark .footer .box-container .box a{
 	color: #f39c12;
 }
 
+.result #lowerbdy{
+  width: 100%;
+  height: 99.3%;
+  margin: 25px auto;
+  overflow: hidden;
+  position: relative;
+  perspective: 1000px;
+}
 
+.result .tab{
+  font: bold 13px sans-serif;
+  background: #222;
+  border: 1px solid #cecece;
+  margin: 15px auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 2px;
+}
 
+.result .tab ul{
+  float: left;
+  list-style: none;
+  text-align: left;
+  margin: 0px;
+  padding-left: 0px;
+  
+}
 
+.result .tab ul li{
+  margin-right: -1px;
+}
+
+.result .tab ul li a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid transparent;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 16px 40px 16px 20px;
+}
+
+.result .tab ul li a.tab-active{
+  background:var(--main-color);
+}
+
+.result .tab ul li:first-child a{
+  border-top: 0px;
+}
+
+.result .tab .content{
+  overflow: hidden;
+  border-left: 1px solid #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: #333;
+  padding: 10px 20px 25px;
+  margin: 0px auto;
+  box-shadow: -3px 0 0px #555;
+  text-align: center;
+  
+}
+
+.result .tab .content div{
+  display: none;
+}
+
+.result .tab .content div.content-active{
+  display: block;
+  
+}
+
+.result .tab .content div pre{
+  color: #fff;
+  font-size: small;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 5px 0px 20px;
+}
+
+.result .tab .content div h2{
+  color: var(--main-color);
+  line-height: 1.5;
+  margin: 5px 0px 20px;
+}
+
+.result .tab .content div h1{
+  color: #fff;
+}
+.result .tab .content div img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: .3s ease-in;
+}
+
+@media (max-width:688px){
+  
+  .result .tab ul{
+    float: none;
+  }
+  .result .tab ul li{
+    display: inline-block;
+    margin-bottom: -1px;
+  }
+  .result .tab ul li a{
+    border: 1px solid transparent;
+    border-bottom: 0px;
+    border-top: 0px;
+    padding: 12px 15px;
+  }
+
+  .result .tab ul li a.tab-active{
+    border-color: #ddd;
+    background-color: #333;
+    box-shadow: 2px 0px 0px #333;
+  }
+   
+  .result .tab ul li:first-child a{
+    border-left: 0px;
+  }
+
+  .result .tab .content{
+    float: left;
+    padding: 8px 15px 15px;
+    border-left: 0px;
+    border-top: 1px solid #dddd;
+    box-shadow: 0px -3px 0px #333;
+  }
+
+  .result .tab .content div img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: .3s ease-in;
+  }
+  
+}
+
+@media (max-width:500px){
+  .result .tab .content{
+    text-align: left;
+  }
+  
+  .result .tab ul li a{
+    padding: 8px 10px;
+  }
+
+  .result .tab .content div pre{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 5px 0px 20px;
+  }
+}
 
 
