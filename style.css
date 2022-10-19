@@ -444,6 +444,7 @@ body.dark .about .row .content h3{
 
 .review .box .user img{
   border-radius: 50%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -459,7 +460,7 @@ body.dark .about .row .content h3{
 
 .review .box .user-info span{
   font-size: 1.5rem;
-  color: #eee;
+  color:#fff;
 }
 .review .box .user-info p{
   font-size: 15px;
@@ -564,14 +565,14 @@ body.dark .footer .box-container .box a{
     font-size: 55%;
   }
   .header{
-    padding: 1.5rem 2rem;
+    padding: .5rem 1rem;
   }
   section{
     padding: 3rem;
   }
 }
 
-@media (max-width:800px){
+@media (max-width:880px){
   #menu-bars{
     display: initial;
   }
@@ -610,6 +611,8 @@ body.dark .footer .box-container .box a{
   .home .content h3{
     font-size: 4rem;
   }
+
+  
 }
 
 @media (max-width:450px){
@@ -624,6 +627,8 @@ body.dark .footer .box-container .box a{
   .contact form .inputbox input{
     width: 100%;
   }
+
+  
 
 }
 
@@ -647,7 +652,7 @@ body.dark .footer .box-container .box a{
 }
 
 .label .ball {
-	background-color: #f1c40f;
+	background-color: #e6e60b;
 	border-radius: 50%;
 	position: absolute;
 	top: 2px;
@@ -664,11 +669,11 @@ body.dark .footer .box-container .box a{
 
 
 .fa-moon {
-	color: #f1c40f;
+	color: #e6e60b;
 }
 
 .fa-sun {
-	color: #f39c12;
+	color: #e6e60b;
 }
 
 .result #lowerbdy{
@@ -682,8 +687,7 @@ body.dark .footer .box-container .box a{
 
 .result .tab{
   font: bold 13px sans-serif;
-  background: #222;
-  border: 1px solid #cecece;
+  background: #333;
   margin: 15px auto;
   width: 100%;
   text-align: center;
@@ -710,7 +714,7 @@ body.dark .footer .box-container .box a{
   border: 1px solid transparent;
   border-right: 0px;
   border-left: 0px;
-  padding: 16px 40px 16px 20px;
+  padding: 16px 40px 18px 22px;
 }
 
 .result .tab ul li a.tab-active{
@@ -726,10 +730,10 @@ body.dark .footer .box-container .box a{
   border-left: 1px solid #333;
   font-weight: bold;
   font-size: 1.5rem;
-  background: #333;
+  background: #444;
   padding: 10px 20px 25px;
   margin: 0px auto;
-  box-shadow: -3px 0 0px #555;
+  box-shadow: -3px 0 0px #333;
   text-align: center;
   
 }
@@ -768,7 +772,6 @@ body.dark .footer .box-container .box a{
 }
 
 @media (max-width:688px){
-  
   .result .tab ul{
     float: none;
   }
@@ -780,13 +783,13 @@ body.dark .footer .box-container .box a{
     border: 1px solid transparent;
     border-bottom: 0px;
     border-top: 0px;
-    padding: 12px 15px;
+    padding: 14px 17px;
   }
 
   .result .tab ul li a.tab-active{
-    border-color: #ddd;
-    background-color: #333;
-    box-shadow: 2px 0px 0px #333;
+    border-color: #333;
+    background-color: #444;
+    
   }
    
   .result .tab ul li:first-child a{
@@ -797,7 +800,7 @@ body.dark .footer .box-container .box a{
     float: left;
     padding: 8px 15px 15px;
     border-left: 0px;
-    border-top: 1px solid #dddd;
+    border-top: 1px solid #333;
     box-shadow: 0px -3px 0px #333;
   }
 
@@ -808,6 +811,7 @@ body.dark .footer .box-container .box a{
     transition: .3s ease-in;
   }
   
+  
 }
 
 @media (max-width:500px){
@@ -816,7 +820,7 @@ body.dark .footer .box-container .box a{
   }
   
   .result .tab ul li a{
-    padding: 8px 10px;
+    padding: 12px 10px;
   }
 
   .result .tab .content div pre{
@@ -828,3 +832,129 @@ body.dark .footer .box-container .box a{
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    padding: 20px 7%;
+    background-color: #333;
+    min-height: 100vh;
+    gap: 15px;
+    padding-bottom: 80px;
+}
+
+.container .content{
+    flex:1 1 400px;
+}
+
+.container .image{
+    flex:1 1 400px;
+}
+
+.container .image img{
+    width: 100%;
+}
+
+.container .content .title{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #2980b9;
+}
+
+.container .content p{
+    font-size: 20px;
+    color: #eee;
+    padding:5px 0;
+}
+
+.container .content .count-down{
+    display: flex;
+    gap: 15px;
+    padding:10px 0;
+}
+
+.container .content .count-down .box{
+    background: #444;
+    padding:5px;
+    border:1px solid #333;
+    text-align: center;
+    flex:1 1 20px;
+}
+
+.container .content .count-down .box h3{
+    font-size: 50px;
+    color: #fff;
+}
+
+.container .content .count-down .box span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.container .content .btn{
+    display: inline-block;
+    padding:8px 50px;
+    margin:10px 0;
+    font-size: 17px;
+    background: #2980b9;
+    color: #fff;
+    transition: .2s ease-out;
+}
+
+.container .content .btn:hover{
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+
+    .container{
+        padding: 20px;
+    }
+
+    .container .content{
+        text-align: center;
+    }
+
+    .container .content .title{
+        font-size: 35px;
+    }
+
+    .container .content p{
+        font-size: 15px;
+    }
+
+    .container .content .count-down{
+        grid-area: 15px;
+    }
+
+    .container .content .count-down .box h3{
+        font-size: 30px;
+    }
+
+    .container .content .count-down .box span{
+        font-size: 15px;
+    }
+}
