@@ -63,7 +63,7 @@ chk.addEventListener('change', () => {
 
 
 
-let countDate = new Date('oct 20, 2022 00:00:00').getTime();
+let countDate = new Date('oct 20, 2022 15:30:00').getTime();
 
 function countDown(){
 
