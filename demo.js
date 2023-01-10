@@ -68,7 +68,7 @@ let countDate = new Date('oct 20, 2022 15:30:00').getTime();
 function countDown(){
 
     let now = new Date().getTime();
-    gap = countDate - now;
+    gap = max(0, countDate - now);
 
     let second = 1000;
     let minute = second * 60;
